@@ -37,6 +37,10 @@
     </div>
 
     <script>
+        window.onload = (function(){
+            const cityName = "dhaka";
+            getWeatherDetails(cityName);
+        })
         const searchButton = document.getElementById("search-button");
         searchButton.addEventListener("click", function(){
             const cityName = document.getElementById("city-input").value ;
