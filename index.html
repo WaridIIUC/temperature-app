@@ -44,7 +44,7 @@
         })
         
         function getWeatherDetails(cityName){
-            fetch(`http://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=539ee13c6d4b82da2e6b9ddf7d11361e&units=metric`)
+            fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=539ee13c6d4b82da2e6b9ddf7d11361e&units=metric`)
                 .then(res => res.json())
                 .then(data => {
                     // const user = data.results[0];
